@@ -14,8 +14,6 @@ public class UserService {
 
     @Autowired
     private UserRepository repository;
-
-
     public User saveUser(UserRequest userRequest) {
         User user = User.
                 build(0, userRequest.getName(), userRequest.getEmail(),
